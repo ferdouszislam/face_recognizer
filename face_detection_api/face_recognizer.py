@@ -76,4 +76,7 @@ def match_face(image_path):
             detected_face_id = known_face_ids[best_match_index]
             detected_face_ids.append(detected_face_id)
 
+        else:
+            detected_face_ids.append(-1)
+
     return detected_face_ids
